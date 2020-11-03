@@ -1,6 +1,0 @@
-# Project exclude paths
-.gitignore
-.gradle
-.idea
-공부.txt
-application-oauth.properties
