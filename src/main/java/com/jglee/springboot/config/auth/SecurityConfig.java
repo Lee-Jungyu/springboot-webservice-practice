@@ -21,7 +21,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //authorizeRequests: URL별 권한 관리를 설정하는 옵션의 시작점
                 .authorizeRequests()
                 //antMatcher: 권한 관리 대상을 지정하는 옵션. URL, HTTP 메소드별로 관리가 가능함
-                .antMatchers("/", "/css/**", "/images/**","/js/**", "/h2-console/**")
+                .antMatchers("/", "/css/**", "/images/**","/js/**", "/h2-console/**", "/profile")
                 // "/" 등 지정된 URL들은 permitAll() 옵션을 통해 전체 열람 권한을 줌
                 .permitAll()
                 //POST 메소드이면서 "/api/v1/**"주소를 가진 api는 USER 권한을 가진 사람만 가능
